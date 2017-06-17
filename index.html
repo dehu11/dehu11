@@ -3,65 +3,31 @@
 <head>
 
 <link href="style.css" rel="stylesheet" type="text/css">
-
-<script>
-function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-</script>
-
-<script>
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-function myAjax() {
-  $.ajax({
-    type: "POST",
-    url: '178Proj/ajax.php',
-    data:{action:'call_this'},
-    success:function(html) {
-      alert(html);
-    }
-  });
-}
-</script>
-
-</head>
 <body>
 
-<h1 align="center">Derek Hu</h1>
-<p align="center">idk what im doing</p>
-
-<div class="tab" align="center">
-  <button class="tablinks" onclick="openCity(event, 'About')" id="defaultOpen">About</button>
-  <button class="tablinks" onclick="openCity(event, 'Experience')">Experience</button>
-  <button class="tablinks" onclick="openCity(event, 'Projects')">Projects</button>
-  <button class="tablinks" onclick="openCity(event, 'Contact')">Contact</button>
+<div id="home">
+<h1 class="center">Derek Hu</h1>
+<!--p align="center">idk what im doing</p-->
 </div>
 
-<div id="About" class="tabcontent">
-<p>Hello</p>
+<a name="about"></a>
+<div id="about">
+<h2>Hu Am I?</h2>
 </div>
 
-<div id="Experience" class="tabcontent">
-<p>World</p>
+<a name="experience"></a>
+<div id="experience">
+<h2 align="right">Experience</h2>
 </div>
 
-<div id="Projects" class="tabcontent">
-<p>I'm</p>
+<a name="projects"></a>
+<div id="projects">
+<h2>Projects</h2>
 </div>
 
-<div id="Contact" class="tabcontent">
-<p>Derek</p>
+<a name="contact"></a>
+<div id="contact">
+<h2 align="right">Contact</h2>
 </div>
 
 </body>
