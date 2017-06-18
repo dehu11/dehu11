@@ -4,10 +4,10 @@ div#home {
 }
 
 h1.center {
-  text-align: center; 
-  padding-top: 50vh;
+  text-align: center;
+  padding-top: 40vh;
 }
- 
+
 div#about {
 	height: 100vh;
 	background: #B4D383;
