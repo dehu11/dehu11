@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300|Source+Sans+Pro:300" rel="stylesheet">
 </head>
 <body>
 
@@ -51,6 +51,34 @@
 <div id="contact">
   <div align="right" style="padding:15vh;">
     <h2>Contact</h2>
+	    
+    <div class="w-form">
+      <form action="contact.php" method="post">
+        <label for="name">Name:</label> 
+        <input class="w-input" type="text" placeholder="Enter your name" name="cf_name"> 
+
+        <label for="email">Email Address:</label> 
+        <input class="w-input" placeholder="Enter your email address" type="text" name="cf_email" required="required"> 
+
+        <label for="email">Your Message:</label> 
+
+        <textarea class="w-input message" placeholder="Enter your Message Here" name="cf_message"></textarea><br>
+
+        <input class="w-button" type="submit" value="Send">
+      </form>
+
+      <div class="w-form-done">
+        <p>Thank you! Your submission has been
+        received!</p>
+      </div>
+
+
+      <div class="w-form-fail">
+        <p>Oops! Something went wrong while submitting the
+        form :(</p>
+      </div>
+    </div>
+
   </div>
 </div>
 
