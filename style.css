@@ -3,7 +3,7 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-div#home {
+header {
 	height: 100vh;
 	background: url(dehu11.github.io/IMG_6024.JPG);
 }
@@ -13,23 +13,23 @@ h1.center {
   padding-top: 40vh;
 }
 
-div#about {
+section {
 	height: 100vh;
+}
+
+section.about {
 	background: #B4D383;
 }
 
-div#experience {
-	height: 100vh;
+section.experience {
 	background: white;
 }
 
 div#projects {
-	height: 100vh;
 	background: #B4D383;
 }
 
-div#contact {
-	height: 100vh;
+section.contact {
 	background: white;
 }
 
