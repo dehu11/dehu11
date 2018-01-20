@@ -14,7 +14,7 @@ h1.center {
 }
 
 section {
-	height: 100vh;
+	min-height: 100%;
 }
 
 section.about {
@@ -25,7 +25,7 @@ section.experience {
 	background: white;
 }
 
-div#projects {
+section.projects {
 	background: #B4D383;
 }
 
@@ -118,4 +118,11 @@ textarea.w-input,textarea.w-select {
 	color:#fff;
 	border:0;
 	line-height:inherit
+}
+
+@media (min-width: 768px) {
+	header {
+		min-height: 100%;
+		width: 100%;
+	}
 }
