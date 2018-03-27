@@ -87,7 +87,6 @@
 
 /*------ FULLPAGE ------*/
 .fullpage {
-	text-align: center;
 	font-family: 'AnonymousPro';
 }
 
@@ -101,3 +100,24 @@
 	color: #3FA3F6; /* blue */
 	font-size: 24px;
 }
+
+.fullpage a {
+	color: #BA8EFF; /* purple */
+}
+
+.fullpage ul {
+	list-style-type: none;
+	color: #3FA3F6; /* blue */
+	font-size: 24px;
+}
+
+.fullpage b {
+	font-family: 'AnonymousProB';
+}
+
+.fullpage i {
+	color: #F69800; /* orange */
+	font-family: 'AnonymousProI';
+}
+
+
