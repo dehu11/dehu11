@@ -1,86 +1,115 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<link href="style.css" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Lato:300|Source+Sans+Pro:300" rel="stylesheet">
-</head>
-<body>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scal=1">
+		<meta name="description" content="Derek Hu's Website">
+		<meta name="author" content="Derek Hu">
+		<title>Derek Hu's Site</title>
+		
+		<!-- CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+	
+	<body data-spy="scroll" data-target=".navbar">
+		<!-- Navigation -->
+		<nav class="navbar navbar-inverse  navbar-fixed-top
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>                        
+					</button>
+				</div>
+				<div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="nav navbar-nav" id="menu">
+							<li data-menuanchor="Hello"><a href="#Hello">Hello</a></li>
+							<li data-menuanchor="About"><a href="#About">About</a></li>
+							<li data-menuanchor="Experience"><a href="#Experience">Experience</a></li>
+							<li data-menuanchor="Contact"><a href="#Contact">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+		
+		<!-- First Page -->
+		<div id="fullpage" class="fullpage">
+			<div class="section " id="section0">
+				<h1>Derek Hu</h1>
+				<p>A Santa Clara University student</p>
+			</div>
 
-<div id="home">
-<h1 class="center">Derek Hu</h1>
-<p align="center">idk what im doing</p>
-</div>
+		<!-- Second Page -->
+			<div class="section" id="section1">
+				<div class="intro">
+					<h1>About</h1>
+					<p>This is stuff about me.</p>
+				</div>
+			</div>
+						
+		<!-- Third Page -->
+			<div class="section" id="section2">
+				<div class="slide">
+					<div class="intro">
+						<h1>Experience</h1>
+						<p>This is stuff I've done.</p>
+					</div>
 
-<a name="about"></a>
-<div id="about">
-  <div style="padding:15vh;">
-    <h2>Hu Am I?</h2>
-    <p>Thing 1<br>
-    Thing 2<br>
-    Thing 3<br>
-    Thing 4<br>
-    Thing 5</p>
-  </div>
-</div>
-
-<a name="experience"></a>
-<div id="experience">
-  <div align="right" style="padding:15vh;">
-    <h2>Experience</h2>
-    <p>Thing 1<br>
-    Thing 2<br>
-    Thing 3<br>
-    Thing 4<br>
-    Thing 5</p>
-  </div>
-</div>
-
-<a name="projects"></a>
-<div id="projects">
-  <div style="padding:15vh;">
-    <h2>Projects</h2>
-    <p>Thing 1<br>
-    Thing 2<br>
-    Thing 3<br>
-    Thing 4<br>
-    Thing 5</p>
-  </div>
-</div>
-
-<a name="contact"></a>
-<div id="contact">
-  <div align="right" style="padding:15vh;">
-    <h2>Contact</h2>
-	    
-    <div class="w-form">
-      <form action="contact.php" method="post">
-        <label for="name">Name:</label> 
-        <input class="w-input" type="text" placeholder="Enter your name" name="cf_name"> 
-
-        <label for="email">Email Address:</label> 
-        <input class="w-input" placeholder="Enter your email address" type="text" name="cf_email" required="required"> 
-
-        <label for="email">Your Message:</label> 
-
-        <textarea class="w-input message" placeholder="Enter your Message Here" name="cf_message"></textarea><br>
-
-        <input class="w-button" type="submit" value="Send">
-      </form>
-
-      <div class="w-form-done">
-        <p>Thank you! Your submission has been
-        received!</p>
-      </div>
-
-
-      <div class="w-form-fail">
-        <p>Oops! Something went wrong while submitting the
-        form :(</p>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-</body>
+				</div>
+				<div class="slide">
+					<div class="intro">
+						<h1>Projects</h1>
+						<p>This is stuff I've created.</p>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="intro">
+						<h1>Skills</h1>
+						<p>This is stuff I can do.</p>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="intro">
+						<h1>Idk</h1>
+						<p>This is stuff to add.</p>
+					</div>
+				</div>
+			</div>
+		
+		<!-- Fourth Page -->
+			<div class="section" id="section3">
+				<div class="intro">
+					<h1>Contact</h1>
+					<p>This is how to get in touch with me.</p>
+				</div>
+			</div>
+		</div>
+		
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+		<script src="jquery.js"></script>
+		<script src="jquery.sticky.js"></script>
+		<script>
+		  $(document).ready(function(){
+			$("#sticker").sticky({topSpacing:0});
+		  });
+		</script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#fullpage').fullpage({
+					sectionsColor: ['#1B1D1E', '#1B1D1E', '#1B1D1E', '#1B1D1E'],//#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+					anchors: ['Hello', 'About', 'Experience', 'Contact'],
+					menu: '#menu',
+					scrollingSpeed: 750
+				});
+			});
+		</script>
+	</body>
 </html>

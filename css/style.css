@@ -1,0 +1,103 @@
+/*------ FONTS ------*/
+
+@font-face {
+    font-family: 'AnonymousPro';
+    src: url('../fonts/AnonymousPro/AnonymousPro.eot');
+	src: url('../fonts/AnonymousPro/AnonymousPro.woff') format('woff'),
+		 url('../fonts/AnonymousPro/AnonymousPro.ttf') format('truetype'),
+		 url('../fonts/AnonymousPro/AnonymousPro.svg') format('svg'),
+		 url('../fonts/AnonymousPro/AnonymousPro.eof') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'AnonymousProB';
+    src: url('../fonts/AnonymousProB/AnonymousProB.ttf');
+	src: url('../fonts/AnonymousProB/AnonymousProB.woff') format('woff'),
+		 url('../fonts/AnonymousProB/AnonymousProB.ttf') format('truetype'),
+		 url('../fonts/AnonymousProB/AnonymousProB.svg') format('svg'),
+		 url('../fonts/AnonymousProB/AnonymousProB.eof') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'AnonymousProBI';
+    src: url('../fonts/AnonymousProBI/AnonymousProBI.ttf');
+	src: url('../fonts/AnonymousProBI/AnonymousProBI.woff') format('woff'),
+		 url('../fonts/AnonymousProBI/AnonymousProBI.ttf') format('truetype'),
+		 url('../fonts/AnonymousProBI/AnonymousProBI.svg') format('svg'),
+		 url('../fonts/AnonymousProBI/AnonymousProBI.eof') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'AnonymousProI';
+    src: url('../fonts/AnonymousProI/AnonymousProI.ttf');
+	src: url('../fonts/AnonymousProI/AnonymousProI.woff') format('woff'),
+		 url('../fonts/AnonymousProI/AnonymousProI.ttf') format('truetype'),
+		 url('../fonts/AnonymousProI/AnonymousProI.svg') format('svg'),
+		 url('../fonts/AnonymousProI/AnonymousProI.eof') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*------ GENERAL ------*/
+
+
+/*------ NAVBAR ------*/
+
+.navbar-inverse {
+	font-size: 16px;
+	font-family: 'AnonymousPro';
+	display: flex;
+	justify-content: center;
+	background: transparent;
+	border-color: transparent;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover {
+	background: transparent;!important;
+}
+
+#myNavbar a {
+	color: #FFFFFF;
+	background: transparent;
+}
+
+#myNavbar .active a {
+    color: #DC4086; /* red */
+}
+
+/*------ NAVBAR TOGGLE ------*/
+
+.navbar-toggle {
+	background: transparent;
+	border-color: transparent!important;
+}
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+    background: transparent!important;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background: #FFFFFF!important;
+}
+
+/*------ FULLPAGE ------*/
+.fullpage {
+	text-align: center;
+	font-family: 'AnonymousPro';
+}
+
+.fullpage h1 {
+	color: #89D114; /* green */
+	font-size: 70px;
+	font-family: 'AnonymousProB';
+}
+
+.fullpage p {
+	color: #3FA3F6; /* blue */
+	font-size: 24px;
+}
