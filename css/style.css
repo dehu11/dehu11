@@ -92,13 +92,13 @@
 
 .fullpage h1 {
 	color: #89D114; /* green */
-	font-size: 70px;
+	font-size: 8vh;
 	font-family: 'AnonymousProB';
 }
 
 .fullpage p {
 	color: #3FA3F6; /* blue */
-	font-size: 24px;
+	font-size: 3vh;
 }
 
 .fullpage a {
@@ -108,7 +108,7 @@
 .fullpage ul {
 	list-style-type: none;
 	color: #3FA3F6; /* blue */
-	font-size: 24px;
+	font-size: 3vh;
 }
 
 .fullpage b {
@@ -120,4 +120,29 @@
 	font-family: 'AnonymousProI';
 }
 
+/*------ Progress Bar ------*/
 
+#progress-bar-collection div {
+    display: inline-block;
+}
+
+#progress-bar-collection li {
+    display: inline-block;
+    width: 20vh;
+}
+
+div.progress {
+	top: 14px;
+    position: relative;
+    width: 35%;
+    height: 5px;
+    background-color: #FFFFFF;
+}
+
+div.progress-bar {
+    position: absolute;
+    width: 0%;
+    height: 150%;
+    margin-top: -1px;
+    background-color: #E7C700;
+}
