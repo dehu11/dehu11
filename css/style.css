@@ -122,11 +122,11 @@
 
 /*------ Progress Bar ------*/
 
-#progress-bar-collection div {
+#progress-bar div {
     display: inline-block;
 }
 
-#progress-bar-collection li {
+#progress-bar li {
     display: inline-block;
     width: 20vh;
 }
@@ -134,7 +134,7 @@
 div.progress {
 	top: 14px;
     position: relative;
-    width: 35%;
+    width: 40%;
     height: 5px;
     background-color: #FFFFFF;
 }
