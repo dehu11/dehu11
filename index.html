@@ -159,17 +159,19 @@
 						<h1>Contact</h1>
 						<p>want to know more? check out my <a href="">resume</a> or send me a message</p>
 						<div class="col-md-9">
-							<form action="<form action="https://formspree.io/dhu1@acu.edu" method="POST" enctype="text/plain">
+							<form action="https://formspree.io/dhu1@acu.edu" method="POST" enctype="text/plain">
+								<input type="hidden" name="_subject" value="New Email from Website!" />
 								<div class="col-xs-6">
 									<p>Name:</p>
 									<input type="text" name="name" style="width:90%; border-radius:5px"><br><br>
 								</div>
 								<div class="col-xs-6">
 									<p>Email:</p>
-									<input type="text" name="email" style="width:90%; border-radius:5px"><br><br>
+									<input type="text" name="_replyto" placeholder="Your email" style="width:90%; border-radius:5px"><br><br>
 								</div>
 								<p>Message:</p>
 								<textarea name="message" style="width:90%;height:10vh;border-radius:5px" ></textarea><br><br>
+								<input type="text" name="_gotcha" style="display:none" />
 								<input type="submit" value="Send!" style="font-family: 'AnonymousProB'; font-size: 2vh; width:70px; height:40px; background:#4BB254; border:none; border-radius:5px">
 							</form>
 						</div>
