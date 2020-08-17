@@ -1,152 +1,307 @@
 /*------ FONTS ------*/
-
 @font-face {
-    font-family: 'AnonymousPro';
-    src: url('../fonts/AnonymousPro/AnonymousPro.eot');
+	font-family: 'AnonymousPro';
+	src: url('../fonts/AnonymousPro/AnonymousPro.eot');
 	src: url('../fonts/AnonymousPro/AnonymousPro.woff') format('woff'),
-		 url('../fonts/AnonymousPro/AnonymousPro.ttf') format('truetype'),
-		 url('../fonts/AnonymousPro/AnonymousPro.svg') format('svg'),
-		 url('../fonts/AnonymousPro/AnonymousPro.eof') format('embedded-opentype');
+		url('../fonts/AnonymousPro/AnonymousPro.ttf') format('truetype'),
+		url('../fonts/AnonymousPro/AnonymousPro.svg') format('svg'),
+		url('../fonts/AnonymousPro/AnonymousPro.eof') format('embedded-opentype');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-    font-family: 'AnonymousProB';
-    src: url('../fonts/AnonymousProB/AnonymousProB.ttf');
+	font-family: 'AnonymousProB';
+	src: url('../fonts/AnonymousProB/AnonymousProB.ttf');
 	src: url('../fonts/AnonymousProB/AnonymousProB.woff') format('woff'),
-		 url('../fonts/AnonymousProB/AnonymousProB.ttf') format('truetype'),
-		 url('../fonts/AnonymousProB/AnonymousProB.svg') format('svg'),
-		 url('../fonts/AnonymousProB/AnonymousProB.eof') format('embedded-opentype');
+		url('../fonts/AnonymousProB/AnonymousProB.ttf') format('truetype'),
+		url('../fonts/AnonymousProB/AnonymousProB.svg') format('svg'),
+		url('../fonts/AnonymousProB/AnonymousProB.eof') format('embedded-opentype');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-    font-family: 'AnonymousProBI';
-    src: url('../fonts/AnonymousProBI/AnonymousProBI.ttf');
+	font-family: 'AnonymousProBI';
+	src: url('../fonts/AnonymousProBI/AnonymousProBI.ttf');
 	src: url('../fonts/AnonymousProBI/AnonymousProBI.woff') format('woff'),
-		 url('../fonts/AnonymousProBI/AnonymousProBI.ttf') format('truetype'),
-		 url('../fonts/AnonymousProBI/AnonymousProBI.svg') format('svg'),
-		 url('../fonts/AnonymousProBI/AnonymousProBI.eof') format('embedded-opentype');
+		url('../fonts/AnonymousProBI/AnonymousProBI.ttf') format('truetype'),
+		url('../fonts/AnonymousProBI/AnonymousProBI.svg') format('svg'),
+		url('../fonts/AnonymousProBI/AnonymousProBI.eof') format('embedded-opentype');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-    font-family: 'AnonymousProI';
-    src: url('../fonts/AnonymousProI/AnonymousProI.ttf');
+	font-family: 'AnonymousProI';
+	src: url('../fonts/AnonymousProI/AnonymousProI.ttf');
 	src: url('../fonts/AnonymousProI/AnonymousProI.woff') format('woff'),
-		 url('../fonts/AnonymousProI/AnonymousProI.ttf') format('truetype'),
-		 url('../fonts/AnonymousProI/AnonymousProI.svg') format('svg'),
-		 url('../fonts/AnonymousProI/AnonymousProI.eof') format('embedded-opentype');
+		url('../fonts/AnonymousProI/AnonymousProI.ttf') format('truetype'),
+		url('../fonts/AnonymousProI/AnonymousProI.svg') format('svg'),
+		url('../fonts/AnonymousProI/AnonymousProI.eof') format('embedded-opentype');
 	font-weight: normal;
 	font-style: normal;
 }
 
 /*------ GENERAL ------*/
-
 img {
 	margin: 10px;
 }
 
+.fullpage .whiteText {
+	color: #FFFFFF;
+}
+
+.fullpage .subText {
+	font-size: 14px;
+}
+
+.contact__name {
+	width: 90%;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+.contact__email {
+	width: 90%;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+.contact__message {
+	width: 95%;
+	height: 10vh;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+.contact__gotcha {
+	display: none;
+}
+
+.contact__submit {
+	font-family: 'AnonymousProB';
+	font-size: 16px;
+	background:#4BB254;
+	padding: 5px 10px;
+	border:none;
+	border-radius:5px;
+	margin-bottom: 16px;
+}
+
+.contact__social {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.contact__social a {
+	flex-basis:33.33%;
+	text-align: center;
+}
+
+.contact__icon {
+	width: 32px;
+}
 /*------ NAVBAR ------*/
 
 .navbar-inverse {
+	width: 100%;
 	font-size: 16px;
 	font-family: 'AnonymousPro';
 	display: flex;
 	justify-content: center;
-	background: transparent;
+	background: #3C3C3C;
 	border-color: transparent;
 }
 
-.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover {
-	background: transparent;!important;
+.navbar-inverse .navbar-nav > li > a:hover {
+	background: #505050 !important;
+}
+.navbar-inverse .navbar-nav > .active > a {
+	background: #094771 !important;/*#DC4086; red */
 }
 
 #myNavbar a {
-	font-size: 2vh;
+	font-size: 16px;
 	color: #FFFFFF;
 	background: transparent;
 }
 
-#myNavbar .active a {
-    color: #DC4086; /* red */
+.navbar .container-fluid {
+	width: 100%;
 }
+
+.navbar-header {
+	display: flex;
+	justify-content: center;
+}
+
+.navbar-nav {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0;
+}
+
+/* #myNavbar .active a {
+} */
 
 /*------ NAVBAR TOGGLE ------*/
 
 .navbar-toggle {
 	background: transparent;
-	border-color: transparent!important;
+	border-color: transparent !important;
 }
 .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
-    background: transparent!important;
+	background: transparent !important;
 }
 
 .navbar-inverse .navbar-toggle .icon-bar {
-    background: #FFFFFF!important;
+	background: #FFFFFF !important;
 }
 
 /*------ FULLPAGE ------*/
 .fullpage {
 	font-family: 'AnonymousPro';
+	font-size: 16px;
 }
 
 .fullpage h1 {
-	color: #89D114; /* green */
-	font-size: 7.5vh;
+	color: #3794ff; /* green */
 	font-family: 'AnonymousProB';
+	font-size: 24px;
+}
+
+.fullpage h1.typewrite {
+	font-size: 32px;
 }
 
 .fullpage p {
-	color: #3FA3F6; /* blue */
-	font-size: 3vh;
+	color: #CE9178; /* blue */
 }
 
 .fullpage a {
-	color: #BA8EFF; /* purple */
+	color: #b180d7; /* purple */
 }
 
 .fullpage ul {
 	list-style-type: none;
-	color: #3FA3F6; /* blue */
-	font-size: 3vh;
+	padding-inline-start: 16px;
+	color: #4e94ce; /* blue */
 }
 
 .fullpage b {
+	color: #9CDCFE; /* blue */
 	font-family: 'AnonymousProB';
 }
 
 .fullpage i {
-	color: #F69800; /* orange */
+	/* color: #F69800; orange */
 	font-family: 'AnonymousProI';
+}
+
+.fp-tableCell .container {
+	padding: 24px 32px 0;
+}
+
+#fp-nav.right {
+	right: 0px;
 }
 
 /*------ Progress Bar ------*/
 
 #progress-bar div {
-    display: inline-block;
+	display: inline-block;
 }
 
 #progress-bar li {
-    display: inline-block;
-    width: 20vh;
+	display: inline-block;
+	width: 40vh;
 }
 
-div.progress {
-	top: 14px;
-    position: relative;
-    width: 40%;
-    height: 5px;
-    background-color: #FFFFFF;
+.progress__container {
+	display: flex;
+	flex-flow: row nowrap;
 }
 
-div.progress-bar {
-    position: absolute;
-    width: 0%;
-    height: 150%;
-    margin-top: -1px;
-    background-color: #E7C700;
+.progress__skill {
+	flex-basis: 40%;
+}
+
+.progress {
+	flex-basis: 50%;
+	top: 10px;
+	position: relative;
+	width: 30%;
+	height: 5px;
+	background-color: #FFFFFF;
+}
+
+.progress__level {
+	position: absolute;
+	width: 0%;
+	height: 150%;
+	margin-top: -1px;
+	background-color: #cca700;
+}
+
+/*------ TABLET ------*/
+@media screen and (min-width: 768px) {
+	.fullpage {
+		font-size: 24px;
+	}
+
+	.fullpage h1 {
+		font-size: 32px;
+	}
+
+	.fullpage h1.typewrite {
+		font-size: 40px;
+	}
+
+	.fullpage .subText {
+		font-size: 20px;
+	}
+
+	.contact__social a {
+		flex-basis: 16.66%;
+	}
+
+	.contact__icon {
+		width: 48px;
+	}
+
+	#myNavbar a {
+		font-size: 24px;
+	}
+
+	.navbar-nav {
+		flex-direction: row;
+	}
+
+}
+
+/*------ DESKTOP ------*/
+@media screen and (min-width: 1024px) {
+	.fullpage {
+		font-size: 32px;
+	}
+
+	.fullpage h1 {
+		font-size: 40px;
+	}
+
+	.fullpage h1.typewrite {
+		font-size: 48px;
+	}
+
+	.fullpage .subText {
+		font-size: 24px;
+	}
+
+	.contact__icon {
+		width: 64px;
+	}
+
 }
